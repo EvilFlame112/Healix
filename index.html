@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/img1.jpg" id="logo-img">
+                <h1>Healix</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="home-btn">Home</a></li>
+                    <li><a href="#" id="book-btn">Book</a></li>
+                    <li><a href="#" id="search-btn">Search</a></li>
+                    <li><a href="#" id="chatbot-btn">Chatbot</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page">
+            <div class="container">
+                <div class="intro">
+                    <h2>Welcome to Healix</h2>
+                    <p>Healix is your medical AI that can help you with your health needs. Whether you want to book an appointment with a doctor, search for information about a disease, or chat with a friendly bot that can check your symptoms and provide cures, Healix is here for you.</p>
+                    <button id="book-btn1">Book an Appointment Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Page -->
+        <div id="book" class="page hidden">
+            <div class="container">
+                <div class="form">
+                    <h2>Book an Appointment</h2>
+                    <p>Please fill out the form below and we will contact you to confirm your booking.</p>
+                    <form id="book-form" method="POST" action="#">
+                        <div class="input-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="time">Time:</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="reason">Reason for Visit:</label>
+                            <textarea id="reason" name="reason" required></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn">Submit</button>
+                    </form>
+
+                    <!-- Response from server -->
+                    <div id="response" class="hidden"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Page -->
+        <div id="search" class="page hidden">
+            <div class="container">
+                <!-- Search box -->
+                <div class="search-box">
+                    <h2>Search for a Disease</h2>
+                    <p>Enter the name of a disease and get information about it.</p>
+                </div>
+                <div id="external-website-container">
+                    <iframe src="https://healthbotcontainer.azurewebsites.net" width="100%" height="400"></iframe>
+                </div>
+
+                <!-- Results from database -->
+                <div id="results" class="hidden"></div>
+            </div>
+        </div>
+
+        <!-- Chatbot Page -->
+        <div id="chatbot" class="page hidden">
+            <div class="container">
+                <!-- Chat window -->
+                <div class="chat-window">
+                    <h2>Chat with Healix</h2>
+                    <p>Healix is your medical AI that can check your symptoms and provide cures. Just type your message and press enter to chat.</p>
+                    <div id="messages"></div>
+                    <input type="text" id="message" name="message" placeholder="Type your message...">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Include your JavaScript file at the end -->
+    <script src="script.js"></script>
+</body>
+</html>

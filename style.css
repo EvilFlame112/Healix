@@ -1,0 +1,127 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+div[id="home"],
+div[id="book"]{
+  padding: 20px 20px 20px 20px;
+}
+
+/* Set background color and font for the entire page */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #36b55c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header-logo h1 {
+    font-size: 28px;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #36b55c;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Main content container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Page title styles */
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* General paragraph styles */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"],
+button[type="button"],
+button[id="book-btn1"]{
+    background-color: #36b55c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #2a944a;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #36b55c;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Hidden elements */
+.hidden {
+    display: none;
+}
